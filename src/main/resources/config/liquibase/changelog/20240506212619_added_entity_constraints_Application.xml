@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <!--
+        Added the constraints for entity Application.
+    -->
+    <changeSet id="20240506212619-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="application_id"
+                                 baseTableName="rel_application__banner"
+                                 constraintName="fk_rel_application__banner__application_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="application"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="banner_id"
+                                 baseTableName="rel_application__banner"
+                                 constraintName="fk_rel_application__banner__banner_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="app_banner"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="application_id"
+                                 baseTableName="rel_application__colour_palette"
+                                 constraintName="fk_rel_application__colour_palette__application_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="application"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="colour_palette_id"
+                                 baseTableName="rel_application__colour_palette"
+                                 constraintName="fk_rel_application__colour_palette__colour_palette_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="app_colour_palette"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="application_id"
+                                 baseTableName="rel_application__social_media"
+                                 constraintName="fk_rel_application__social_media__application_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="application"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="social_media_id"
+                                 baseTableName="rel_application__social_media"
+                                 constraintName="fk_rel_application__social_media__social_media_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="social_media"
+                                 />
+    </changeSet>
+</databaseChangeLog>

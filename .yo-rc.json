@@ -1,0 +1,27 @@
+{
+  "generator-jhipster": {
+    "applicationIndex": 3,
+    "applicationType": "microservice",
+    "authenticationType": "oauth2",
+    "baseName": "movilapp",
+    "buildTool": "maven",
+    "cacheProvider": "redis",
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "enableHibernateCache": true,
+    "entities": ["Application", "AppMenu", "AppServices", "FrequentlyQuestion", "AppBanner", "AppColourPalette", "SocialMedia"],
+    "jhipsterVersion": "8.4.0",
+    "jwtSecretKey": "ZDFlYjI2MzcwY2UyZWQxNDM4NjJhNzdiNzZkOGViOTIyOTVmMWU4NDAxY2QyNWEzOTY4NTZkMWU0YTExYzE2ZmFmNGFhM2UyNjk2NGUzMWYxMDdjYTRhMjNmNDFkMjQ2Yzc5NWExMjBmNjY3NDYyZGJkYzQzZmU1MzU5ZjJmZjI=",
+    "languages": ["en"],
+    "lastLiquibaseTimestamp": 1715031139000,
+    "nativeLanguage": "en",
+    "packageFolder": "ec/gob/loja/movilapp",
+    "packageName": "ec.gob.loja.movilapp",
+    "prodDatabaseType": "postgresql",
+    "reactive": true,
+    "serverPort": "8084",
+    "serviceDiscoveryType": "consul",
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

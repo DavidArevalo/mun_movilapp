@@ -1,0 +1,36 @@
+{
+  "annotations": {
+    "changelogDate": "20240506213219"
+  },
+  "applications": ["gateway", "movilapp"],
+  "clientRootFolder": "movilapp",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "url",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "icon",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "colour",
+      "fieldType": "String"
+    }
+  ],
+  "microserviceName": "movilapp",
+  "name": "SocialMedia",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

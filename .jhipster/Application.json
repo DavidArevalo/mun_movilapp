@@ -1,0 +1,85 @@
+{
+  "annotations": {
+    "changelogDate": "20240506212619"
+  },
+  "applications": ["gateway", "movilapp"],
+  "clientRootFolder": "movilapp",
+  "databaseType": "sql",
+  "documentation": "START MOVILAPP",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "urlAndroid",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "urlIos",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "version",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    }
+  ],
+  "microserviceName": "movilapp",
+  "name": "Application",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "appServices",
+      "relationshipName": "service",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "appMenu",
+      "relationshipName": "menu",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "frequentlyQuestion",
+      "relationshipName": "frequentlyQuestion",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "appBanner",
+      "relationshipName": "banner",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "appColourPalette",
+      "relationshipName": "colourPalette",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "socialMedia",
+      "relationshipName": "socialMedia",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

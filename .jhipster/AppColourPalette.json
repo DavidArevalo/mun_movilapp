@@ -1,0 +1,45 @@
+{
+  "annotations": {
+    "changelogDate": "20240506213119"
+  },
+  "applications": ["gateway", "movilapp"],
+  "clientRootFolder": "movilapp",
+  "databaseType": "sql",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "primaryColour",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "secondaryColour",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tertiaryColour",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "neutralColour",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ligthBackgroundColour",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "darkBackgroundColour",
+      "fieldType": "String"
+    }
+  ],
+  "microserviceName": "movilapp",
+  "name": "AppColourPalette",
+  "pagination": "pagination",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
