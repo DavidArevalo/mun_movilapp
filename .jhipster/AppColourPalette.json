@@ -1,6 +1,6 @@
 {
   "annotations": {
-    "changelogDate": "20240506213119"
+    "changelogDate": "20240506214019"
   },
   "applications": ["gateway", "movilapp"],
   "clientRootFolder": "movilapp",
