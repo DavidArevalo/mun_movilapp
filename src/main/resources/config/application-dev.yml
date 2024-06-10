@@ -62,7 +62,7 @@ spring:
     cache-duration: PT1S # 1 second, see the ISO 8601 standard
   r2dbc:
     url: r2dbc:postgresql://localhost:5432/movilapp
-    username: movilapp
+    username: david
     password:
   thymeleaf:
     cache: false

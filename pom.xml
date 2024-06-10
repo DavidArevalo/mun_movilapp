@@ -851,7 +851,7 @@
                 <spring.profiles.active>dev${profile.tls}${profile.no-liquibase}</spring.profiles.active>
                 <profile.test>testdev</profile.test>
                 <liquibase-plugin.url>jdbc:postgresql://localhost:5432/movilapp</liquibase-plugin.url>
-                <liquibase-plugin.username>movilapp</liquibase-plugin.username>
+                <liquibase-plugin.username>david</liquibase-plugin.username>
                 <liquibase-plugin.password/>
             </properties>
             <dependencies>
